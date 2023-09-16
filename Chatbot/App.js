@@ -83,8 +83,8 @@ class App extends Component {
 
   render() {
     return (
+      <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
       
-      <View style={{flex: 1, backgroundColor: '#fff'}}>
           <GiftedChat
           messages={this.state.messages}
           onSend={(message) => this.onSend(message)}
@@ -92,8 +92,8 @@ class App extends Component {
           renderBubble={this.renderBubble}
           user={{_id: 1}}
         />
-      </View>
-      
+     
+      </SafeAreaView>
     )
   }
 }
